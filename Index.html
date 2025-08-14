@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-avatar">🤖</div>
+            <div class="header-info">
+                <h2>Assistente Virtual</h2>
+                <span class="status">Online</span>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Olá! Sou seu assistente virtual. Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-prompts" id="quickPrompts">
+            <button class="prompt-btn" data-prompt="Quais são seus horários de funcionamento?">
+                Horários de funcionamento
+            </button>
+            <button class="prompt-btn" data-prompt="Como posso entrar em contato?">
+                Contato
+            </button>
+            <button class="prompt-btn" data-prompt="Quais serviços vocês oferecem?">
+                Nossos serviços
+            </button>
+            <button class="prompt-btn" data-prompt="Onde vocês estão localizados?">
+                Localização
+            </button>
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem..." maxlength="500">
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
